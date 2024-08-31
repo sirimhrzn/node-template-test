@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "paths": {
+      "#auth": [
+        "./modules/auth/*"
+      ],
+      "#handlers": [
+        "./src/Http/Handlers/index.ts"
+      ],
+      "#routes" : [
+	"./routes/router.ts"
+      ]
+    }
+  },
+  "include": ["src/**/*", "modules/**/*", "routes/*","src/**/**/*"],
+  "exclude": ["node_modules"]
+}
